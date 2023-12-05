@@ -14,12 +14,12 @@ function App() {
           </ul>
 
           <h3>Владею следующими технологиями:</h3>
-          <ul className="App-ul"></div>>
+          <ul className="App-ul">
             <li>backend на java и немного css/html/javascript</li>
           </ul>
 
           <h3>О себе:</h3>
-          <ul className="App-ul">>
+          <ul className="App-ul">
             <li>довольно давно на java backend, на проекте возникла задача по переносу клиентской части приложения
                на html/javascript и стало интересно как устроен современный фронтенд</li>
           </ul>
