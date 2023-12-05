@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <div className="App-container">
           <h3>Хочу достичь следующих целей:</h3>
           <ul>
             <li>погрузиться в разработку фронтенда на React</li>
@@ -23,7 +23,7 @@ function App() {
             <li>довольно давно на java backend, на проекте возникла задача по переносу клиентской части приложения
                на html/javascript и стало интересно как устроен современный фронтенд</li>
           </ul>
-        </p>
+        </div>
       </header>
     </div>
   );
