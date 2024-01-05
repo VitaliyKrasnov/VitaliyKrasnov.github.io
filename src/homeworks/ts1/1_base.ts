@@ -31,8 +31,8 @@ export const getTransformFromCss = (transformCssString: string): CssResult => {
   };
 };
 
-type ColorContrast = [number, number, number];
-export const getColorContrastValue = ([red, green, blue]: ColorContrast): number =>
+type RGB = [number, number, number];
+export const getColorContrastValue = ([red, green, blue]: RGB): number =>
   // http://www.w3.org/TR/AERT#color-contrast
   Math.round((red * 299 + green * 587 + blue * 114) / 1000);
 
@@ -46,7 +46,6 @@ export const checkColor = (color: string): void | never => {
   if (!longColorRegExp.test(color) && !shortColorRegExp.test(color)) throw new Error(`invalid hex color: ${color}`);
 };
 
-type RGB = [number, number, number];
 export const hex2rgb = (color: string): RGB => {
   checkColor(color);
   if (shortColorRegExp.test(color)) {
