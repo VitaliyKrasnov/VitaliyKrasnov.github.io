@@ -134,3 +134,6 @@ dist
 .idea
 .jest
 storybook-static
+
+# Mac
+.DS_Store
